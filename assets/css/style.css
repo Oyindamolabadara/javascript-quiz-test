@@ -57,3 +57,41 @@ h1,h2 {
     background:linear-gradient(180deg, rgb(238, 75, 43),rgb(136, 8, 8));
 }
 
+/* End Page CSS */
+.end-form-container {
+    /* padding: 1rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: solid;
+    color: rgb(136, 8, 8);
+}
+
+input::placeholder {
+    color: #111;
+}
+
+#username {
+    margin-bottom: 3rem;
+/*     width: 100%; */
+    outline: none;
+}
+
+#end-text {
+    font-size: 2rem;
+    color: #111;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
