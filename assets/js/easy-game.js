@@ -25,7 +25,7 @@ let questions = [
         choice2: "The <body> section",
         choice3: "The <head> section",
         choice4: "Both the <head> section and the <body> section are correct",
-        answer: 1,
+        answer: 4,
     },
     {
         question: 'What is the correct syntax for referring to an external script called "xxx.js"?',

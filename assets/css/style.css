@@ -43,7 +43,7 @@ h1,h2 {
 
 .btn:hover {
     cursor: pointer;
-    height: 2rem;
+    /* height: 2rem; */
 /*     transform: scale(1.0); */
 }
 
