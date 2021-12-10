@@ -1,5 +1,7 @@
+/* imported font */
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 
+/* general stylings */
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +35,7 @@ h2 {
   align-items: center;
 }
 
+/* buttons stylings */
 .btn {
   font-size: 1.2rem;
   padding: 16px 0;
@@ -41,22 +44,14 @@ h2 {
   margin-bottom: 1rem;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  /*     background: rgb(212,175,55); */
   background: linear-gradient(180deg, rgb(212, 175, 55), rgb(255, 165, 0));
   border-radius: 4px;
 }
 
 .btn:hover {
   cursor: pointer;
-  height: 2rem;
-  /*     transform: scale(1.0); */
+  height: 2rem
 }
-
-/* .btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-} */
 
 #highscore-btn {
   background: linear-gradient(180deg, rgb(238, 75, 43), rgb(136, 8, 8));
@@ -93,7 +88,6 @@ nav .nav-level {
   border-radius: 4px;
   background: rgb(212, 175, 55);
   font-size: 1.2rem;
-  /* min-width: 80rem; */
 }
 
 .choice-container:hover {
@@ -102,22 +96,20 @@ nav .nav-level {
   transform: transform 100ms;
 }
 
-/* .choice-prefix {
-  color: white;
-  padding: 2rem 2.5rem;
-}
-*/
-
 .choice-text {
   padding-left: 0.5rem;
-  /* width: 100%; */
 }
 
 #question {
-  /* padding-top: 0.5rem; */
   font-size: 1.5rem;
 }
 
+#questions-page,
+#end-page {
+  display: none;
+}
+
+/* correct and incorrect answers styling */
 .correct {
   background: linear-gradient(
     32deg,
@@ -138,7 +130,7 @@ nav .nav-level {
 
 #hud {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding-top: 2rem;
 }
 
@@ -149,14 +141,13 @@ nav .nav-level {
 
 .hud-prefix {
   text-align: center;
-  /*     font-size: 2rem; */
-  /* padding: 10px 0; */
 }
 
 .hud-main-text {
   text-align: center;
 }
 
+/* progress bar stylings */
 #progressBar {
   width: 10rem;
   height: 2rem;
@@ -172,15 +163,8 @@ nav .nav-level {
   border-radius: 50px;
 }
 
-#questions-page,
-#end-page {
-  display: none;
-}
 
-/* footer {
-  position: absolute;
-  bottom: 0;
-} */
+
 
 /* @media screen and (max-width: 768px) {
   .choice-container {
