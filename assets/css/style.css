@@ -59,10 +59,15 @@ h2 {
 
 /* End of general style */
 .container {
+  padding: 1rem;
   position: relative;
   width: 90%;
   height: 100vh;
   margin: auto;
+}
+
+.heading {
+  padding-top: 1rem;
 }
 
 header {
@@ -96,7 +101,7 @@ nav .nav-level {
   transform: transform 100ms;
 }
 
-.choice-text {
+.choice-text, .choice-prefix {
   padding-left: 0.5rem;
 }
 
@@ -163,11 +168,12 @@ nav .nav-level {
   border-radius: 50px;
 }
 
-
-
-
-/* @media screen and (max-width: 768px) {
-  .choice-container {
-      min-width: 40rem;
+@media only screen and (min-width: 900px) {
+  .container {
+    padding: 1rem;
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    margin: auto;
   }
-} */
+}
