@@ -6,6 +6,7 @@ JavaScript quiz test was created to test users knowledge on JavaScript with no t
 ![Final design]()
 
 # WIREFRAME
+![Wireframe]()
 
 # USER EXPERIENCE(UX) / SITE GOALS
 * The game was created using my knowledge on HTML, CSS and JAVASCRIPT.
@@ -18,7 +19,7 @@ JavaScript quiz test was created to test users knowledge on JavaScript with no t
 * Featured at the home page is the title, JavaScript Quiz Test and some brief description to familiarise the user with the game.  
 * Beneath this are the navigation links to start each level of the quiz; easy, medium and difficult.
 * There is also a High Scores navigation link to display to top five high scores with the players usernames. 
-![Landing Page]()
+![Landing Page](assets/images/landing-page.png)
 
 ## The Easy Game Level
 * Clicking on the easy game navigation, the user is directed to another page that displays the easy game questions. 
@@ -29,7 +30,7 @@ JavaScript quiz test was created to test users knowledge on JavaScript with no t
 * Next is the question displayed with four options to chose from. 
 * The user is directed to the next question after choosing an answer. 
 
-![Easy Game]()
+![Easy Game](assets/images/easy-game.png)
 
 ## The Medium and Difficult Game Level
 The medium and difficult game level has pretty much the same features as the easy game level, except that the questions for each level are different and more challenging. 
