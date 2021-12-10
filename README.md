@@ -1,108 +1,92 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# JAVASCRIPT QUIZ TEST
+JavaScript quiz test was created to test users knowledge on JavaScript with no time limit.  It comes in three levels; easy, medium and difficult. For each level, there are 10 questions and users will get 10 points for each correct answer.  At the end of the quiz, the total score will be displayed. Maximum score for each level is 100 points. The user has to input a username for the score to be saved. At the end page, there is a leader board that displays the highest scores. 
 
-Welcome Ganiat Badara,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# FINAL DESIGN
+![Final design]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# WIREFRAME
 
-## Gitpod Reminders
+# USER EXPERIENCE(UX) / SITE GOALS
+* The game was created using my knowledge on HTML, CSS and JAVASCRIPT.
+* The game was created to test and improve users knowledge in JavaScript.
+* Part of the site goals is to make the game easily accessible, providing interactive buttons that are clear as to what they do. 
+* The users are provided with some introductory text to familiarise the user with the game. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# EXISTING FEATURES
+## The Landing Page
+* Featured at the home page is the title, JavaScript Quiz Test and some brief description to familiarise the user with the game.  
+* Beneath this are the navigation links to start each level of the quiz; easy, medium and difficult.
+* There is also a High Scores navigation link to display to top five high scores with the players usernames. 
+![Landing Page]()
 
-`python3 -m http.server`
+## The Easy Game Level
+* Clicking on the easy game navigation, the user is directed to another page that displays the easy game questions. 
+* On the top of the page again  is the title, JavaScript Quiz Test. Clicking on this takes the user back to the home/landing page. 
+* Beneath the title are the links ; easy, medium, difficult and high scores again to allow users navigate and interact easily with the site. 
+* Beneath the navigation links, at the left side is a score tracking system. This displays the question number and a bar which increases after each question. 
+* Beside this is the Score which increases by 10 points for each correct answer. The score remains the same and is not increased if the user gets the answer wrong. 
+* Next is the question displayed with four options to chose from. 
+* The user is directed to the next question after choosing an answer. 
 
-A blue button should appear to click: _Make Public_,
+![Easy Game]()
 
-Another blue button should appear to click: _Open Browser_.
+## The Medium and Difficult Game Level
+The medium and difficult game level has pretty much the same features as the easy game level, except that the questions for each level are different and more challenging. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Medium Game]()
+![Difficult Game]()
 
-A blue button should appear to click: _Make Public_,
+## The End Page
+* The user is directed to an end page after playing each level. The user has to input a username to save the game.
 
-Another blue button should appear to click: _Open Browser_.
+![End Page]()
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## The High Scores
+* Featured in the high scores is a leader board showing the top 5 high scores and their respective usernames. 
+![High Scores]()
 
-To log into the Heroku toolbelt CLI:
+# DESIGN
+## Color Scheme
+I wanted a simple and basic color scheme, using a white background for all pages, a gold shade for the level navigation links, a ....... for the high scores navigation and a green color for the progress bar. 
+## Typography
+The "Cardo" font used for the site was imported from [Google Fonts](https://fonts.google.com/).
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# TECHNOLOGY USED
+Google Fonts: Google Fonts was used to import the fonts used for all the text content on the site pages.
+Git: Git was used for version control by using the Gitpod terminal to commit to Git and push to GitHub.
+GitPod: GitPod was used as an IDE whilst coding this site.
+GitHub: GitHub is being used to store all the code for this project after being pushed from GitPod.
+Am I Responsive: Am I Responsive was used to create the images in the Final Design section.
+Chrome Developer Tools: Chrome Developer Tools was used for trouble shooting and trying new visual changes without it affecting the current code.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# SOLVED BUGS
 
-------
+TESTING
+I tested that this page works in different browsers.
+I have ensured that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
+I have confirmed that all texts are readable and easy to understand.
 
-## Release History
+# VALIDATOR TESTING
+The [W3C Markup Validator]() and [W3C CSS Validator]() and [JSHint] () was used to validate my project to make sure no errors were returned.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# LIGHTHOUSE
+I ran the game live through Chrome Lighthouse and received the following result:
+![Light house]()
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+# SOLVED BUGS
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+# UNSOLVED BUGS
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# DEPLOYMENT
+* The site was deployed to GitHub pages. The steps to deploy are as follows:
+  * In the GitHub repository, navigate to the Settings tab.
+  * From the source section drop-down menu, select the Master Branch.
+  * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+[The live link can be found here.]() 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# CREDITS
+Most of the quiz questions were taken from the (W3 Schools Website) with some adjustments. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+# ACKNOWLEDGEMENTS
+I would like to thank [AbdulFattah Badara](https://github.com/fobadara) and my Code Institute mentor, [Anthony Ugwu](https://github.com/tonyguesswho) for all their support, patience, encouragement and corrections during this project. I could not have done this without them. 
