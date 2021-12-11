@@ -216,8 +216,12 @@ button {
 }
 
 #scores {
-  padding: 1rem;
+  padding-bottom: 2rem;
   font-size: 1.2rem;
+}
+
+#error span {
+  margin-right: 10px;
 }
 
 /* media queries */
@@ -238,3 +242,4 @@ button {
     align-items: flex-start;
   }
 }
+
