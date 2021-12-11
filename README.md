@@ -71,25 +71,28 @@ TESTING
 * I have confirmed that all texts are readable and easy to understand.
 
 # VALIDATOR TESTING
-The [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Foyindamolabadara.github.io%2Fjavascript-quiz-test%2F#textarea) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and [JSHint] (https://jshint.com/) was used to validate my project to make sure no major errors were returned.
+The [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Foyindamolabadara.github.io%2Fjavascript-quiz-test%2F#textarea) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and [JSHint](https://jshint.com/) was used to validate my project to make sure no major errors were returned.
 
 # LIGHTHOUSE
 I ran the game live through Chrome Lighthouse and received the following result:
-![Light house]()
+![Light house](assets/images/lighthouse.png)
 
 # SOLVED BUGS
+* On the JSHint Validator, there was an error message about the use of esversion:6. This was fixed by adding /*jshint esversion: 6 */ to the code. 
+* There was also another JS error on changing ['number'] to a dot notation, which was fixed. 
 
 # UNSOLVED BUGS
+* On the home page, I found out that the leader board/ high score page sometimes appears under the navigation levels when I reload the game. I was unable to fix this due to time constraint and meeting up with the submission deadline. 
 
 # DEPLOYMENT
 * The site was deployed to GitHub pages. The steps to deploy are as follows:
   * In the GitHub repository, navigate to the Settings tab.
   * From the source section drop-down menu, select the Master Branch.
   * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-[The live link can be found here.]() 
+[The live link can be found here.](https://oyindamolabadara.github.io/javascript-quiz-test/) 
 
 # CREDITS
-Most of the quiz questions were taken from the (W3 Schools Website) with some adjustments. 
+Most of the quiz questions were taken from the [W3 Schools Website](https://www.w3schools.com/js/js_quiz.asp) with some adjustments. 
 
 # ACKNOWLEDGEMENTS
 I would like to thank [AbdulFattah Badara](https://github.com/fobadara) and my Code Institute mentor, [Anthony Ugwu](https://github.com/tonyguesswho) for all their support, patience, encouragement and corrections during this project. I could not have done this without them. 
