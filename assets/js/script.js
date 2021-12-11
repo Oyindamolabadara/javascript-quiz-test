@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const body = document.querySelector('body');
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice-text"));
@@ -7,18 +8,18 @@ const progressBarFull = document.querySelector("#progressBarFull");
 const level = document.querySelectorAll('.level');
 const nav = document.querySelector('nav');
 const homePage = document.querySelector('#home-page');
-const questionsPage = document.querySelector('#questions-page')
+const questionsPage = document.querySelector('#questions-page');
 const scores = document.querySelector('#scores');
 const highScores = document.querySelector('#scores-page');
 const form = document.querySelector('form');
 let input = document.querySelector('#name');
 const error = document.querySelector('#error');
-let currentQuestion = {}
-let acceptingAnswers = true
+let currentQuestion = {};
+let acceptingAnswers = true;
 let score;
-let questionCounter = 0
+let questionCounter = 0;
 let questions = [];
-let availableQuestions = []
+let availableQuestions = [];
 let easyQuestions = [
   {
     question: "What is JavaScript?",
@@ -100,7 +101,7 @@ let easyQuestions = [
     choice4: "<scripting>",
     answer: 1,
   },
-]
+];
 
 let mediumQuestions = [
   {
@@ -184,7 +185,7 @@ let mediumQuestions = [
     answer: 2,
   },
 
-]
+];
 
 let hardQuestions = [
   {
@@ -267,17 +268,17 @@ let hardQuestions = [
     choice4: "for (i = 0; i <= 5)",
     answer: 3,
   },
-]
+];
 
-const SCORE_POINTS = 10
-const MAX_QUESTIONS = 10
+const SCORE_POINTS = 10;
+const MAX_QUESTIONS = 10;
 
 startGame = (questions) => {
-  questionCounter = 0
-  score = 0
+  questionCounter = 0;
+  score = 0;
   availableQuestions = questions;
-  getNewQuestion()
-}
+  getNewQuestion();
+};
 
 switchHash = () => {
   body.addEventListener('click', (event) => {
@@ -291,21 +292,21 @@ switchHash = () => {
     } else if (element.id === 'hard') {
       window.location.hash = '#hard';
     } else if (element.id === 'highscores-btn') {
-      window.location.hash = '#highscores'
+      window.location.hash = '#highscores';
     }
-  })
-}
+  });
+};
 switchHash();
 
 displayContent = () => {
-  let hash = window.location.hash
+  let hash = window.location.hash;
   // select appropriate questions for each level
   if (hash === '#easy') {
     questions = [...easyQuestions];
   } else if (hash === '#medium') {
-    questions = [...mediumQuestions]
+    questions = [...mediumQuestions];
   } else if (hash === '#hard') {
-    questions = [...hardQuestions]
+    questions = [...hardQuestions];
   }
 
   // Controls page displayed on screen
@@ -327,7 +328,7 @@ displayContent = () => {
     highScores.style.display = 'none';
     nav.style.display = 'none';
   }
-}
+};
 window.addEventListener('hashchange', displayContent);
 
 getNewQuestion = () => {
@@ -339,69 +340,69 @@ getNewQuestion = () => {
     startGame([...easyQuestions]);
   }
 
-  questionCounter++
-  progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
+  questionCounter++;
+  progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-  const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-  currentQuestion = availableQuestions[questionsIndex]
-  question.innerText = currentQuestion.question
+  const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+  currentQuestion = availableQuestions[questionsIndex];
+  question.innerText = currentQuestion.question;
 
   choices.forEach(choice => {
-    const number = choice.dataset["number"]
-    choice.innerText = currentQuestion["choice" + number]
-  })
+    const number = choice.dataset.number;
+    choice.innerText = currentQuestion.number;
+  });
 
-  availableQuestions.splice(questionsIndex, 1)
+  availableQuestions.splice(questionsIndex, 1);
 
-  acceptingAnswers = true
-}
+  acceptingAnswers = true;
+};
 
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
-    if (!acceptingAnswers) return
+    if (!acceptingAnswers) return;
 
-    acceptingAnswers = false
-    const selectedChoice = e.target
-    const selectedAnswer = selectedChoice.dataset["number"]
+    acceptingAnswers = false;
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset.number;
 
-    let classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"
+    let classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
     if (classToApply === "correct") {
-      incrementScore(SCORE_POINTS)
+      incrementScore(SCORE_POINTS);
     }
 
-    selectedChoice.parentElement.classList.add(classToApply)
+    selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
-      selectedChoice.parentElement.classList.remove(classToApply)
-      getNewQuestion()
+      selectedChoice.parentElement.classList.remove(classToApply);
+      getNewQuestion();
 
-    }, 1000)
+    }, 1000);
 
-  })
-})
+  });
+});
 
 incrementScore = num => {
-  score += num
-  scoreText.innerText = score
-}
+  score += num;
+  scoreText.innerText = score;
+};
 
 displayLeaderboard = () => {
   let leaderBoard = Object.entries(localStorage);
-  let fragment = new DocumentFragment()
+  let fragment = new DocumentFragment();
   if (leaderBoard) {
-    leaderBoard = leaderBoard.sort((a, b) => b[1] - a[1] )
+    leaderBoard = leaderBoard.sort((a, b) => b[1] - a[1] );
     leaderBoard.forEach(currentItem => {
       const div = document.createElement('div');
-      const element = `<span>${currentItem[0]}</span><span>${currentItem[1]}</span>`
+      const element = `<span>${currentItem[0]}</span><span>${currentItem[1]}</span>`;
       div.innerHTML = element;
       fragment.appendChild(div);
     });
   }
   scores.innerHTML = '';
   scores.appendChild(fragment);
-}
+};
 displayLeaderboard();
 
 updateHighScores = () => {
@@ -417,7 +418,7 @@ updateHighScores = () => {
       }
     }
   });
-}
+};
 updateHighScores();
 
 window.onload = () => {

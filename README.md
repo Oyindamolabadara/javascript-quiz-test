@@ -71,7 +71,7 @@ TESTING
 * I have confirmed that all texts are readable and easy to understand.
 
 # VALIDATOR TESTING
-The [W3C Markup Validator]() and [W3C CSS Validator]() and [JSHint] () was used to validate my project to make sure no errors were returned.
+The [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Foyindamolabadara.github.io%2Fjavascript-quiz-test%2F#textarea) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and [JSHint] (https://jshint.com/) was used to validate my project to make sure no major errors were returned.
 
 # LIGHTHOUSE
 I ran the game live through Chrome Lighthouse and received the following result:
