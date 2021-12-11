@@ -3,7 +3,7 @@ JavaScript quiz test was created to test users knowledge on JavaScript with no t
 
 
 # FINAL DESIGN
-![Final design]()
+![Final design](assets/images/final-design.png)
 
 # WIREFRAME
 ![Wireframe]()
