@@ -6,7 +6,9 @@ JavaScript quiz test was created to test users knowledge on JavaScript with no t
 ![Final design](assets/images/final-design.png)
 
 # WIREFRAME
-![Wireframe]()
+* This was the initial idea sketched on a paper. Changes were made during the process of creating the project. 
+![Wireframe1](assets/images/wireframe-one.png)
+![Wireframe2](assets/images/wireframe-two.png)
 
 # USER EXPERIENCE(UX) / SITE GOALS
 * The game was created using my knowledge on HTML, CSS and JAVASCRIPT.
@@ -35,38 +37,38 @@ JavaScript quiz test was created to test users knowledge on JavaScript with no t
 ## The Medium and Difficult Game Level
 The medium and difficult game level has pretty much the same features as the easy game level, except that the questions for each level are different and more challenging. 
 
-![Medium Game]()
-![Difficult Game]()
+![Medium Game](assets/images/medium-game.png)
+![Difficult Game](assets/images/difficult-game.png)
 
 ## The End Page
 * The user is directed to an end page after playing each level. The user has to input a username to save the game.
 
-![End Page]()
+![End Page](assets/images/end-page.png)
 
 ## The High Scores
 * Featured in the high scores is a leader board showing the top 5 high scores and their respective usernames. 
-![High Scores]()
+![High Scores](assets/images/highscores.png)
 
 # DESIGN
 ## Color Scheme
-I wanted a simple and basic color scheme, using a white background for all pages, a gold shade for the level navigation links, a ....... for the high scores navigation and a green color for the progress bar. 
+I wanted a simple and basic color scheme, using a white background for all pages, a gold shade for the level navigation links, a blue shade for the high scores navigation and a green color for the progress bar. 
 ## Typography
 The "Cardo" font used for the site was imported from [Google Fonts](https://fonts.google.com/).
 
 # TECHNOLOGY USED
-Google Fonts: Google Fonts was used to import the fonts used for all the text content on the site pages.
-Git: Git was used for version control by using the Gitpod terminal to commit to Git and push to GitHub.
-GitPod: GitPod was used as an IDE whilst coding this site.
-GitHub: GitHub is being used to store all the code for this project after being pushed from GitPod.
-Am I Responsive: Am I Responsive was used to create the images in the Final Design section.
-Chrome Developer Tools: Chrome Developer Tools was used for trouble shooting and trying new visual changes without it affecting the current code.
+* Google Fonts: Google Fonts was used to import the fonts used for all the text content on the site pages.
+* Git: Git was used for version control by using the Gitpod terminal to commit to Git and push to GitHub.
+* GitPod: GitPod was used as an IDE whilst coding this site.
+* GitHub: GitHub is being used to store all the code for this project after being pushed from GitPod.
+* Am I Responsive: Am I Responsive was used to create the images in the Final Design section.
+* Chrome Developer Tools: Chrome Developer Tools was used for trouble shooting and trying new visual changes without it affecting the current code.
 
 # SOLVED BUGS
 
 TESTING
-I tested that this page works in different browsers.
-I have ensured that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
-I have confirmed that all texts are readable and easy to understand.
+* I tested that this page works in different browsers.
+* I have ensured that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
+* I have confirmed that all texts are readable and easy to understand.
 
 # VALIDATOR TESTING
 The [W3C Markup Validator]() and [W3C CSS Validator]() and [JSHint] () was used to validate my project to make sure no errors were returned.
