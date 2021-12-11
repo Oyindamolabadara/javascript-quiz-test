@@ -105,7 +105,6 @@ nav .nav-level {
 .choice-container:hover {
   cursor: pointer;
   transform: scale(1.02);
-  transform: 100ms;
 }
 
 .choice-text, .choice-prefix {
