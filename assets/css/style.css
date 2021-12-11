@@ -21,25 +21,12 @@ h2 {
   text-align: center;
 }
 
-.flex-row {
-  display: flex;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-
 .intro-text {
   font-size: 18px;
   line-height: 25px;
   padding-bottom: 1rem;
 }
+
 /* buttons stylings */
 .btn {
   font-size: 1.2rem;
@@ -62,13 +49,27 @@ h2 {
   background: linear-gradient(180deg, rgb(0,255,255), rgb(15, 82, 186));
 }
 
-/* End of general style */
 .container {
   padding: 1rem;
   position: relative;
   width: 90%;
   height: 100vh;
   margin: auto;
+}
+
+/* heading and navigations */
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
 }
 
 .heading {
@@ -91,6 +92,7 @@ nav .nav-level {
   margin: 0.2em;
 }
 
+/* questions */
 .choice-container {
   display: flex;
   margin-bottom: 0.8rem;
@@ -173,24 +175,7 @@ nav .nav-level {
   border-radius: 50px;
 }
 
-@media only screen and (min-width: 900px) {
-  .container {
-    padding: 1rem;
-    position: relative;
-    width: 60%;
-    height: 100vh;
-    margin: auto;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
+/* high score page */
 #scores-page {
   width: 100%;
   display: flex;
@@ -202,15 +187,11 @@ nav .nav-level {
 }
 
 input {
-  /* margin-top: 2rem; */
-  /* font-size: 2.8rem; */
   width: 13rem;
   padding: 1rem;
   background: linear-gradient(180deg, rgb(0,255,255), rgb(15, 82, 186));
-  /* border: none; */
   outline: none;
   color: #fff;
-  /* padding: 15px 32px; */
   text-align: center;
   border-radius: 4px;
 }
@@ -235,8 +216,25 @@ button {
 }
 
 #scores {
-  /* text-align: center; */
   padding: 1rem;
   font-size: 1.2rem;
 }
 
+/* media queries */
+@media only screen and (min-width: 900px) {
+  .container {
+    padding: 1rem;
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
