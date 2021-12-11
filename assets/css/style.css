@@ -35,6 +35,11 @@ h2 {
   align-items: center;
 }
 
+.intro-text {
+  font-size: 18px;
+  line-height: 25px;
+  padding-bottom: 1rem;
+}
 /* buttons stylings */
 .btn {
   font-size: 1.2rem;
@@ -177,3 +182,61 @@ nav .nav-level {
     margin: auto;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+#scores-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+}
+
+input {
+  /* margin-top: 2rem; */
+  /* font-size: 2.8rem; */
+  width: 13rem;
+  padding: 1rem;
+  background: linear-gradient(180deg, rgb(0,255,255), rgb(15, 82, 186));
+  /* border: none; */
+  outline: none;
+  color: #fff;
+  /* padding: 15px 32px; */
+  text-align: center;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+#name {
+  font-size: 1.2rem;
+}
+
+button {
+  width: 15rem;
+  padding: 1rem;
+  background: linear-gradient(180deg, rgb(212, 175, 55), rgb(255, 165, 0));
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+}
+
+#scores {
+  /* text-align: center; */
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+

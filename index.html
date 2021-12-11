@@ -13,7 +13,7 @@
 
 <body>
   <!-- home page -->
-  <header class="flex-row flex-column ">
+  <header class="flex-row flex-column">
     <h1 class="heading">JavaScript Test Quiz</h1>
 
     <nav id="nav" class="flex-row flex-center">
@@ -34,17 +34,18 @@
           Each level  contains 10 questions and there is no time limit. You will get 10 points for each correct answer.
           At
           the end of the quiz, your total score will be displayed. Maximum score for each level  is 100 points.
+          Click on the heading, <strong>JavaScript Test Quiz</strong> to always return to home page. 
         </div>
         <div class="flex-column flex-center">
           <h2>Start the Quiz</h2>
-          <div class="btn level" id="easy">Easy</div>
-          <div class="btn level" id="medium">Medium</div>
-          <div class="btn level" id="hard">Difficult</div>
-          <div id="highscores-btn" class="btn">HighScores</div>
+            <div class="btn level" id="easy">Easy</div>
+            <div class="btn level" id="medium">Medium</div>
+            <div class="btn level" id="hard">Difficult</div>
+            <div id="highscores-btn" class="btn">HighScores</div>
         </div>
       </div>
       <!-- questions page -->
-      <div id="questions-page">
+      <div id="questions-page"> 
         <div id="game" class="justify-center flex-column">
           <div id="hud">
             <div class="hud-item">
@@ -90,9 +91,10 @@
 
         </div>
         <form id="input">
-          <input type="text" id="name" required placeholder="Add your name to the genius list">
+          <h2>Enter your name below to save your score!</h2>
+          <input type="text" id="name" required placeholder="Enter your name">
           <span id="error"></span>
-          <button type="submit" id="name-btn">submit</button>
+          <button type="submit" id="name-btn">Submit</button>
         </form>
       </div>
     </main>

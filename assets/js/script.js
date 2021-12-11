@@ -58,10 +58,10 @@ let easyQuestions = [
     choice2: "False",
     choice3: "Maybe",
     choice4: "All of the above",
-    answer: 1,
+    answer: 2,
   },
   {
-    question: "Is JavaScript case-sensitive?",
+    question: "JavaScript is case-sensitive.",
     choice1: "True",
     choice2: "False",
     choice3: "Maybe",
@@ -136,7 +136,7 @@ let mediumQuestions = [
     answer: 1,
   },
   {
-    question: "How to insert a comment that has more than one line?",
+    question: "How can you insert a comment that has more than one line?",
     choice1: "/This comment has more than one line/",
     choice2: "//This comment has more than one line//",
     choice3: "<!--This comment has more than one line-->",
@@ -152,7 +152,7 @@ let mediumQuestions = [
     answer: 3,
   },
   {
-    question: "What is the most correct way to change the second value in an array to 1? The array is: var arr =[2,4,5,6]?",
+    question: "What is the most correct way to change the second value in an array to 1? The array is: var arr =[2,4,5,6]",
     choice1: "arr[2] = [2, 1, 5, 6]",
     choice2: "arr[1] = 1",
     choice3: "arr[2] = 1",
@@ -168,7 +168,7 @@ let mediumQuestions = [
     answer: 1,
   },
   {
-    question: "What will the following code return: Boolean(10 > 9)",
+    question: "What will the following code return: Boolean(10 > 9)?",
     choice1: "True",
     choice2: "False",
     choice3: "NaN",
@@ -220,7 +220,7 @@ let hardQuestions = [
     answer: 2,
   },
   {
-    question: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
+    question: 'How do you write an IF statement for executing some code if "i" is NOT equal to 5?',
     choice1: "if (i <> 5)",
     choice2: "if (i != 5)",
     choice3: "if i <> 5",
